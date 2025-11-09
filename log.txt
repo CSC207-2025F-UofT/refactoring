@@ -1,9 +1,3 @@
-fdd2a5b Task 2.1
-acc5a54 Task 2.1
-703cf9e Task 1.2
-ccb5b14 Task 1.1
-108b0e3 Task 1.1
-8c3549b Task 1.1 Task 1.2 Task 2.1 Task 2.2 Task 2.3 Task 2.4
 2562b1b dfsd
 a74e935 dsf
 f0805c8 234
