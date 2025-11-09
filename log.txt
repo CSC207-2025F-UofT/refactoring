@@ -1,3 +1,15 @@
+commit acc5a5406626c2467182e0259a0b694abbdb3c00
+Author: inbathiyagarajan <inba9081@gmail.com>
+Date:   Sun Nov 9 13:05:18 2025 -0500
+
+    Task 2.1
+
+commit 703cf9ec84058a8f2a4b5fdd2e1cfee45e28405f
+Author: inbathiyagarajan <inba9081@gmail.com>
+Date:   Sun Nov 9 13:01:40 2025 -0500
+
+    Task 1.2
+
 commit ccb5b140c05c46626d2eccf66fcfed9c805d57e9
 Author: inbathiyagarajan <inba9081@gmail.com>
 Date:   Sun Nov 9 13:00:05 2025 -0500
