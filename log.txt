@@ -1,89 +1,16 @@
-commit acc5a5406626c2467182e0259a0b694abbdb3c00
-Author: inbathiyagarajan <inba9081@gmail.com>
-Date:   Sun Nov 9 13:05:18 2025 -0500
-
-    Task 2.1
-
-commit 703cf9ec84058a8f2a4b5fdd2e1cfee45e28405f
-Author: inbathiyagarajan <inba9081@gmail.com>
-Date:   Sun Nov 9 13:01:40 2025 -0500
-
-    Task 1.2
-
-commit ccb5b140c05c46626d2eccf66fcfed9c805d57e9
-Author: inbathiyagarajan <inba9081@gmail.com>
-Date:   Sun Nov 9 13:00:05 2025 -0500
-
-    Task 1.1
-
-commit 108b0e3761af936fbadcdf7935b5f95a9a4999e1
-Author: inbathiyagarajan <inba9081@gmail.com>
-Date:   Sun Nov 9 12:50:01 2025 -0500
-
-    Task 1.1
-
-commit 8c3549b86142f8dab83c032c7d3d48bb0bfbbdc3
-Author: inbathiyagarajan <inba9081@gmail.com>
-Date:   Sun Nov 9 12:47:06 2025 -0500
-
-    Task 1.1 Task 1.2 Task 2.1 Task 2.2 Task 2.3 Task 2.4
-
-commit 2562b1b86b9f087ca46e81e2ac62bfaf00e6b75a
-Author: inbathiyagarajan <inba9081@gmail.com>
-Date:   Sat Nov 8 20:22:29 2025 -0500
-
-    dfsd
-
-commit a74e9353719b10248cb335e5f4cd84c945725a79
-Author: inbathiyagarajan <inba9081@gmail.com>
-Date:   Sat Nov 8 20:17:50 2025 -0500
-
-    dsf
-
-commit f0805c8df45ffa604b46d1cd0e78349796ff7dce
-Author: inbathiyagarajan <inba9081@gmail.com>
-Date:   Sat Nov 8 20:13:22 2025 -0500
-
-    234
-
-commit 81aed31052e64a32944fe74c955a09940f351aab
-Author: inbathiyagarajan <inba9081@gmail.com>
-Date:   Sat Nov 8 20:00:33 2025 -0500
-
-    fd
-
-commit 2f6f31e7b0b55e747a0eb1835e8c98bbe2572b28
-Author: Inba Thiyagarajan <inbathiyagarajan@mac.home>
-Date:   Sat Nov 8 19:52:51 2025 -0500
-
-    67
-
-commit 851ff576f2c480441ccb404cb5c7db59f3ecb50b
-Author: Inba Thiyagarajan <inbathiyagarajan@mac.home>
-Date:   Sat Nov 8 19:48:31 2025 -0500
-
-    finished
-
-commit b545fe22f6d1ccce3a006026238d24d7a2ba7e96
-Author: Jonathan Calver <calver@cs.toronto.edu>
-Date:   Sat Nov 8 14:25:24 2025 -0500
-
-    clarifying extracted method names in README.md
-
-commit a0124c9a4bf01f5ed6831816f3a55a6e89ce4c97
-Author: Jonathan Calver <calver@cs.toronto.edu>
-Date:   Sat Nov 8 14:06:03 2025 -0500
-
-    fixing starter file
-
-commit c8d9d38c61d20cec31a78ecba8df72c520225b16
-Author: Jonathan Calver <calver@cs.toronto.edu>
-Date:   Sat Nov 8 13:14:44 2025 -0500
-
-    adding starter files
-
-commit cbe45177bf6b90b8e2957fb449cb066ebb437b81
-Author: Jonathan Calver <calver@cs.toronto.edu>
-Date:   Sat Nov 8 13:02:53 2025 -0500
-
-    first commit
+fdd2a5b Task 2.1
+acc5a54 Task 2.1
+703cf9e Task 1.2
+ccb5b14 Task 1.1
+108b0e3 Task 1.1
+8c3549b Task 1.1 Task 1.2 Task 2.1 Task 2.2 Task 2.3 Task 2.4
+2562b1b dfsd
+a74e935 dsf
+f0805c8 234
+81aed31 fd
+2f6f31e 67
+851ff57 finished
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
