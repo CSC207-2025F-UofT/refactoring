@@ -45,6 +45,7 @@ public class StatementPrinter {
      * Calculates the amount for a given performance.
      * @param performance the performance
      * @return the amount in cents
+     * @throws RuntimeException if the play type is not known
      */
     private int getAmount(Performance performance) {
         final Play play = getPlay(performance);
@@ -93,7 +94,8 @@ public class StatementPrinter {
      * @throws RuntimeException if one of the play types is not known
      */
     public String statement() {
-        final StringBuilder result = new StringBuilder("Statement for " + invoice.getCustomer() + System.lineSeparator());
+        final StringBuilder result = new StringBuilder("Statement for "
+                + invoice.getCustomer() + System.lineSeparator());
 
         for (Performance performance : invoice.getPerformances()) {
             final Play play = getPlay(performance);
