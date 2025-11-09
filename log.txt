@@ -1,3 +1,25 @@
+8fa7220 Task 2.4: Extract total volume credits and total amount methods
+58bedeb Task 2.3: Remove frmt variable and extract usd method
+15df7e8 Task 2.2: Extract volume credits calculation
+16dddd5 dfds
+2796536 Task 2.4: Extract total volume credits and total amount methods
+ef2c194 Task 2.3: Remove frmt variable and extract usd method
+6249dd7 Task 2.2: Extract volume credits calculation
+d78bb94 Task 2.4: Extract total volume credits and total amount methods
+fd9ded2 Task 2.3: Remove frmt variable and extract usd method
+f79a967 Task 2.2: Extract volume credits calculation
+cadb5ac Task 2.2: Extract volume credits calculation
+fe5f4d4 Task 2.4: Extract total volume credits and total amount methods
+768cdb7 Task 2.3: Remove frmt variable and extract usd method
+6bbab59 Task 2.2: Extract volume credits calculation
+4afef8c Task 2.1: Extract switch statement into getAmount method
+04d8658 Task 1.2: Update git log
+fdd2a5b Task 2.1
+acc5a54 Task 2.1
+703cf9e Task 1.2
+ccb5b14 Task 1.1
+108b0e3 Task 1.1
+8c3549b Task 1.1 Task 1.2 Task 2.1 Task 2.2 Task 2.3 Task 2.4
 2562b1b dfsd
 a74e935 dsf
 f0805c8 234
