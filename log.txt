@@ -1,4 +1,5 @@
-c28f421 (HEAD -> t) Task 2.1
+35d24e2 (HEAD -> t) Task 2.2
+c28f421 (origin/t) Task 2.1
 37e6c69 Task 1.2
 d5750c7 Task 1.1
 d53d857 Task 1.1
