@@ -1,9 +1,11 @@
-570030e (HEAD -> t) Task 2.3
-35d24e2 (origin/t) Task 2.2
+3479256 (HEAD -> t) Task 2.4
+570030e (origin/t) Task 2.3
+35d24e2 Task 2.2
 c28f421 Task 2.1
 37e6c69 Task 1.2
 d5750c7 Task 1.1
 d53d857 Task 1.1
 ff5004e (origin/main, origin/HEAD, main) adding shortcut keys for Inline Variable (Re: Piazza question)
 b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
 :
