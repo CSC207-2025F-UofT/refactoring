@@ -23,7 +23,6 @@ public class StatementPrinter {
      */
     public String statement() {
 
-
         final StringBuilder result = new StringBuilder(
                 "Statement for " + getInvoice().getCustomer() + System.lineSeparator());
 
