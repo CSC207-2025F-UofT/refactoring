@@ -1,0 +1,12 @@
+1244abe Task 2.4 Extract totals
+7d69b06 Task 2.3 Introduce usd helper
+68b2c10 Task 2.2 Extract volume credits calculation
+1091868 Task 2.1 Extract amount calculation
+e269450 Task 1.2 Update git log snapshot
+1929b9b Task 1.1 Fix CheckStyle issues
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
