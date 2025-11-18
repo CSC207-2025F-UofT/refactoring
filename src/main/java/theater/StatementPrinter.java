@@ -27,19 +27,19 @@ public class StatementPrinter {
         return renderPlainText(statementData);
     }
 
-    protected String renderPlainText(StatementData statementData) {
+    protected String renderPlainText(StatementData data) {
         final StringBuilder result =
-                new StringBuilder("Statement for " + statementData.getCustomer() + System.lineSeparator());
+                new StringBuilder("Statement for " + data.getCustomer() + System.lineSeparator());
 
-        for (PerformanceData performanceData : statementData.getPerformances()) {
+        for (PerformanceData performanceData : data.getPerformances()) {
             result.append(String.format("  %s: %s (%s seats)%n",
                     performanceData.getName(), usd(performanceData.getAmount()),
                     performanceData.getAudience()));
         }
 
         result.append(String.format("Amount owed is %s%n",
-                usd(statementData.totalAmount())));
-        result.append(String.format("You earned %s credits%n", statementData.volumeCredits()));
+                usd(data.totalAmount())));
+        result.append(String.format("You earned %s credits%n", data.volumeCredits()));
         return result.toString();
     }
 
@@ -58,5 +58,29 @@ public class StatementPrinter {
 
     protected StatementData getStatementData() {
         return statementData;
+    }
+
+    protected Play getPlay(Performance performance) {
+        return plays.get(performance.getPlayID());
+    }
+
+    protected int getAmount(Performance performance) {
+        AbstractPerformanceCalculator calculator =
+                AbstractPerformanceCalculator.createPerformanceCalculator(performance, getPlay(performance));
+        return calculator.getAmount();
+    }
+
+    protected int getVolumeCredits(Performance performance) {
+        AbstractPerformanceCalculator calculator =
+                AbstractPerformanceCalculator.createPerformanceCalculator(performance, getPlay(performance));
+        return calculator.getVolumeCredits();
+    }
+
+    protected int getTotalAmount() {
+        return statementData.totalAmount();
+    }
+
+    protected int getTotalVolumeCredits() {
+        return statementData.volumeCredits();
     }
 }

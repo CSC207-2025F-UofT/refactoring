@@ -7,6 +7,12 @@ public abstract class AbstractPerformanceCalculator {
     private final Performance performance;
     private final Play play;
 
+    /**
+     * Constructs a calculator for the given performance and play.
+     *
+     * @param performance the performance being evaluated
+     * @param play the associated play
+     */
     public AbstractPerformanceCalculator(Performance performance, Play play) {
         this.performance = performance;
         this.play = play;
@@ -37,6 +43,11 @@ public abstract class AbstractPerformanceCalculator {
 
     public abstract int getAmount();
 
+    /**
+     * Calculates the volume credits earned for the performance.
+     *
+     * @return earned volume credits
+     */
     public int getVolumeCredits() {
         return Math.max(performance.getAudience() - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
     }
