@@ -24,6 +24,7 @@ public abstract class AbstractPerformanceCalculator {
      * @param performance performance being evaluated
      * @param play associated play
      * @return calculator for the play type
+     * @throws RuntimeException if the play type is unrecognized
      */
     public static AbstractPerformanceCalculator createPerformanceCalculator(Performance performance, Play play) {
         switch (play.getType()) {
