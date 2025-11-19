@@ -6,7 +6,6 @@ import java.util.List;
  * Class representing an invoice for a customer.
  */
 public class Invoice {
-
     private final String customer;
     private final List<Performance> performances;
 
