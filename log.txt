@@ -1,5 +1,6 @@
 mihirpullakhandam@mihirs-laptop refactoring % git log --oneline
-86c277f (HEAD -> task1, origin/task1) Task 1.1
+f26c8fa (HEAD -> task2, origin/task1, task1) Task 1.2
+86c277f Task 1.1
 2b4f164 (origin/main, origin/HEAD, main) fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
 ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
 b545fe2 clarifying extracted method names in README.md
