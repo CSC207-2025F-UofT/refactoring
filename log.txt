@@ -1,4 +1,5 @@
-9a3e355 (HEAD -> task2, origin/task2) Task 2.2
+9cced96 (HEAD -> task2, origin/task2) Task 2.3
+9a3e355 Task 2.2
 f15892a Task 2.1
 f26c8fa (origin/task1, task1) Task 1.2
 86c277f Task 1.1
