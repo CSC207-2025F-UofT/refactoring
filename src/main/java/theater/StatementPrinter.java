@@ -46,12 +46,13 @@ public class StatementPrinter {
         return thisAmount;
     }
 
-    private int volumeCreditsFor(Performance performance, Play play) {
-        int credits = Math.max(performance.getAudience() - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
+    private int getVolumeCredits(Performance performance, Play play) {
+        int result = 0;
+        result += Math.max(performance.getAudience() - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
         if ("comedy".equals(play.getType())) {
-            credits += performance.getAudience() / Constants.COMEDY_EXTRA_VOLUME_FACTOR;
+            result += performance.getAudience() / Constants.COMEDY_EXTRA_VOLUME_FACTOR;
         }
-        return credits;
+        return result;
     }
 
     private String lineFor(Performance performance, Play play, int thisAmount) {
@@ -83,7 +84,7 @@ public class StatementPrinter {
         for (Performance performance : invoice.getPerformances()) {
             final Play play = plays.get(performance.getPlayID());
             final int thisAmount = amountFor(performance, play);
-            volumeCredits += volumeCreditsFor(performance, play);
+            volumeCredits += getVolumeCredits(performance, play);
 
             result.append(lineFor(performance, play, thisAmount));
             totalAmount += thisAmount;
