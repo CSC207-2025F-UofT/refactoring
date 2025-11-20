@@ -33,6 +33,9 @@ public final class Constants {
     public static final int PASTORAL_AUDIENCE_THRESHOLD = 20;
     public static final int PASTORAL_VOLUME_CREDIT_THRESHOLD = 20;
 
+    public static final String PLAY_TYPE_TRAGEDY = "tragedy";
+    public static final String PLAY_TYPE_COMEDY = "comedy";
+
     private Constants() {
 
     }
