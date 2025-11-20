@@ -18,6 +18,8 @@ public final class Constants {
     public static final int TRAGEDY_AUDIENCE_THRESHOLD = 30;
     public static final int TRAGEDY_BASE_AMOUNT = 40000;
     public static final int TRAGEDY_OVER_BASE_CAPACITY_PER_PERSON = 1000;
+    public static final int TRAGEDY_EXTRA_AMOUNT = TRAGEDY_OVER_BASE_CAPACITY_PER_PERSON;
+    public static final int CENTS_PER_DOLLAR = 100;
     // formatting constants
     public static final int PERCENT_FACTOR = 100;
     // history constants
