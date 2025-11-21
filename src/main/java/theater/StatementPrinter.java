@@ -9,6 +9,9 @@ import java.util.Map;
  */
 public class StatementPrinter {
 
+    private final Invoice invoice;
+    private final Map<String, Play> plays;
+
     private final StatementData statementData;
 
     public StatementPrinter(Invoice invoice, Map<String, Play> plays) {
