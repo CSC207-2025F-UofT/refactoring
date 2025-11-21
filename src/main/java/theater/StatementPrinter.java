@@ -30,28 +30,23 @@ public class StatementPrinter {
      * @throws RuntimeException if an unknown play type is encountered
      */
     public String statement() {
-        int totalAmount = 0;
-        int volumeCredits = 0;
         final StringBuilder result =
                 new StringBuilder("Statement for " + invoice.getCustomer()
                         + System.lineSeparator());
 
+        // build a line for each performance
         for (Performance p : invoice.getPerformances()) {
-
-            // add volume credits for this performance
-            volumeCredits += getVolumeCredits(p);
-
-            // print line for this order
             result.append(String.format("  %s: %s (%s seats)%n",
                     getPlay(p).getName(),
                     usd(getAmount(p)),
                     p.getAudience()));
-
-            totalAmount += getAmount(p);
         }
 
-        result.append(String.format("Amount owed is %s%n", usd(totalAmount)));
-        result.append(String.format("You earned %s credits%n", volumeCredits));
+        // footer lines
+        result.append(String.format("Amount owed is %s%n",
+                usd(getTotalAmount())));
+        result.append(String.format("You earned %s credits%n",
+                getTotalVolumeCredits()));
         return result.toString();
     }
 
@@ -80,16 +75,19 @@ public class StatementPrinter {
                 if (performance.getAudience() > Constants.COMEDY_AUDIENCE_THRESHOLD) {
                     result += Constants.COMEDY_OVER_BASE_CAPACITY_AMOUNT
                             + Constants.COMEDY_OVER_BASE_CAPACITY_PER_PERSON
-                            * (performance.getAudience() - Constants.COMEDY_AUDIENCE_THRESHOLD);
+                            * (performance.getAudience()
+                            - Constants.COMEDY_AUDIENCE_THRESHOLD);
                 }
-                result += Constants.COMEDY_AMOUNT_PER_AUDIENCE * performance.getAudience();
+                result += Constants.COMEDY_AMOUNT_PER_AUDIENCE
+                        * performance.getAudience();
                 break;
 
             case "history":
                 result = Constants.HISTORY_BASE_AMOUNT;
                 if (performance.getAudience() > Constants.HISTORY_AUDIENCE_THRESHOLD) {
                     result += Constants.HISTORY_OVER_BASE_CAPACITY_PER_PERSON
-                            * (performance.getAudience() - Constants.HISTORY_AUDIENCE_THRESHOLD);
+                            * (performance.getAudience()
+                            - Constants.HISTORY_AUDIENCE_THRESHOLD);
                 }
                 break;
 
@@ -97,13 +95,15 @@ public class StatementPrinter {
                 result = Constants.PASTORAL_BASE_AMOUNT;
                 if (performance.getAudience() > Constants.PASTORAL_AUDIENCE_THRESHOLD) {
                     result += Constants.PASTORAL_OVER_BASE_CAPACITY_PER_PERSON
-                            * (performance.getAudience() - Constants.PASTORAL_AUDIENCE_THRESHOLD);
+                            * (performance.getAudience()
+                            - Constants.PASTORAL_AUDIENCE_THRESHOLD);
                 }
                 break;
 
             default:
                 throw new RuntimeException(
-                        String.format("unknown type: %s", getPlay(performance).getType()));
+                        String.format("unknown type: %s",
+                                getPlay(performance).getType()));
         }
 
         return result;
@@ -149,6 +149,32 @@ public class StatementPrinter {
                         getPlay(performance).getType()));
         }
 
+        return result;
+    }
+
+    /**
+     * Calculate the total amount in cents for all performances in the invoice.
+     *
+     * @return the total amount in cents for this invoice
+     */
+    private int getTotalAmount() {
+        int result = 0;
+        for (Performance performance : invoice.getPerformances()) {
+            result += getAmount(performance);
+        }
+        return result;
+    }
+
+    /**
+     * Calculate the total volume credits for all performances in the invoice.
+     *
+     * @return the total volume credits earned for this invoice
+     */
+    private int getTotalVolumeCredits() {
+        int result = 0;
+        for (Performance performance : invoice.getPerformances()) {
+            result += getVolumeCredits(performance);
+        }
         return result;
     }
 
