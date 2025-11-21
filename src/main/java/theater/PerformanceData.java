@@ -17,13 +17,20 @@ public class PerformanceData {
     }
 
     public String getType() {
+
         return play.getType();
     }
 
     public String getName() {
+
         return play.getName();
     }
 
+    /**
+     * Nothing.
+     * @return nothing
+     * @throws RuntimeException throws unknow type error
+     */
     public int amountFor() {
         int result = 0;
         switch (getType()) {

@@ -9,13 +9,14 @@ import java.util.Map;
  */
 public class StatementPrinter {
 
-    private final Invoice invoice;
-    private final Map<String, Play> plays;
-
     private final StatementData statementData;
 
     public StatementPrinter(Invoice invoice, Map<String, Play> plays) {
         this.statementData = new StatementData(invoice, plays);
+    }
+
+    public StatementData getStatementData() {
+        return statementData;
     }
 
     /**
@@ -43,7 +44,7 @@ public class StatementPrinter {
         return result.toString();
     }
 
-    private String usd(int totalAmount) {
+    String usd(int totalAmount) {
         return NumberFormat.getCurrencyInstance(Locale.US).format(totalAmount / Constants.PERCENT_FACTOR);
     }
 }

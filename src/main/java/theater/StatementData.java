@@ -10,12 +10,10 @@ import java.util.Map;
  */
 public class StatementData {
     private final Invoice invoice;
-    private final Map<String, Play> plays;
     private final List<PerformanceData> performances;
 
     public StatementData(Invoice invoice, Map<String, Play> plays) {
         this.invoice = invoice;
-        this.plays = plays;
 
         this.performances = new ArrayList<>();
         for (Performance performance : invoice.getPerformances()) {
@@ -54,7 +52,7 @@ public class StatementData {
             result += Math.max(performanceData.getAudience() - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
             // add extra credit for every five comedy attendees
             if ("comedy".equals(performanceData.getType())) {
-                result = performanceData.getAudience() / Constants.COMEDY_EXTRA_VOLUME_FACTOR;
+                result += performanceData.getAudience() / Constants.COMEDY_EXTRA_VOLUME_FACTOR;
             }
         }
         return result;
