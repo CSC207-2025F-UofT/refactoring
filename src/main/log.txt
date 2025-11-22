@@ -1,3 +1,10 @@
+ca574e4 Task2.4
+1e4e4d4 Task2.3
+f283fe9 Task2.2
+2f2b064 Task2.1
+1852d44 Task1.2
+7e559e6 Task1.1
+44f8b42 Update log.txt
 b9c9ef2 Task 2.4
 eff3b05 Task 2.3
 dbbabf9 Task 2.2
