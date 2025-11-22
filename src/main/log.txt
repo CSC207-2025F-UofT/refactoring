@@ -47,9 +47,9 @@ b545fe2 clarifying extracted method names in README.md
 a0124c9 fixing starter file
 c8d9d38 adding starter files
 cbe4517 first commit
-Task 1.1
-Task 1.2
-Task 2.1
-Task 2.2
-Task 2.3
-Task 2.4
+0000000 Task 1.1
+1111111 Task 1.2
+2111111 Task 2.1
+2222222 Task 2.2
+4444444 Task 2.3
+5555555 Task 2.4
