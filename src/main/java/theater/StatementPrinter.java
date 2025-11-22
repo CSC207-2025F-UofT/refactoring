@@ -26,7 +26,7 @@ public class StatementPrinter {
                 "Statement for " + invoice.getCustomer()
                         + System.lineSeparator());
 
-        // loop 1: build per-performance lines
+        // build per-performance lines
         for (final Performance performance : invoice.getPerformances()) {
             result.append(String.format("  %s: %s (%s seats)%n",
                     getPlay(performance).getName(),
