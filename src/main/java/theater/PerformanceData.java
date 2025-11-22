@@ -6,8 +6,8 @@ package theater;
 public class PerformanceData {
     private final Performance performance;
     private final Play play;
-    private int amount;
-    private int volumeCredits;
+    private final int amount;
+    private final int volumeCredits;
 
     public PerformanceData(Performance performance, Play play, int amount, int volumeCredits) {
         this.performance = performance;

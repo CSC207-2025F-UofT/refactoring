@@ -29,7 +29,8 @@ public class StatementPrinter {
     }
 
     private String renderPlainText() {
-        final StringBuilder result = new StringBuilder("Statement for " + statementData.getCustomer() + System.lineSeparator());
+        final StringBuilder result = new StringBuilder("Statement for "
+                + statementData.getCustomer() + System.lineSeparator());
 
         for (PerformanceData performanceData : statementData.getPerformances()) {
             // print line for this order
