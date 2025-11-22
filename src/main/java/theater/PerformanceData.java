@@ -55,4 +55,17 @@ public class PerformanceData {
         }
         return result;
     }
+
+    /**
+     * Nothing.
+     * @return n
+     */
+    public int volumeCredits() {
+        int result = Math.max(getAudience() - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
+        // add extra credit for every five comedy attendees
+        if ("comedy".equals(getType())) {
+            result += getAudience() / Constants.COMEDY_EXTRA_VOLUME_FACTOR;
+        }
+        return result;
+    }
 }

@@ -10,15 +10,20 @@ import java.util.Map;
  */
 public class StatementData {
     private final Invoice invoice;
+    private final Map<String, Play> plays;
     private final List<PerformanceData> performances;
 
     public StatementData(Invoice invoice, Map<String, Play> plays) {
         this.invoice = invoice;
-
+        this.plays = plays;
         this.performances = new ArrayList<>();
         for (Performance performance : invoice.getPerformances()) {
-            performances.add(new PerformanceData(performance, plays.get(performance.getPlayID())));
+            performances.add(createPerformanceData(performance));
         }
+    }
+
+    private PerformanceData createPerformanceData(Performance performance) {
+        return new PerformanceData(performance, plays.get(performance.getPlayID()));
     }
 
     public String getCustomer() {
@@ -32,6 +37,7 @@ public class StatementData {
 
     /**
      * Nothing.
+     *
      * @return nothing
      */
     public int totalAmount() {
@@ -44,18 +50,15 @@ public class StatementData {
 
     /**
      * Nothing.
+     *
      * @return nothing
      */
     public int volumeCredits() {
         int result = 0;
         for (PerformanceData performanceData : performances) {
-            result += Math.max(performanceData.getAudience() - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
-            // add extra credit for every five comedy attendees
-            if ("comedy".equals(performanceData.getType())) {
-                result += performanceData.getAudience() / Constants.COMEDY_EXTRA_VOLUME_FACTOR;
-            }
+            result += performanceData.volumeCredits();
+            return result;
         }
         return result;
     }
-
 }
