@@ -1,0 +1,15 @@
+0e50b16 (HEAD -> main, origin/main, origin/HEAD) 'Task 2.4' refactored loops, and created new methods to simplify code
+74751ea 'Task 2.4'
+e38e52a `Task 2.3`
+b511905 `Task 2.2`
+7bd8922 `Task 2.1`
+759a561 `Task 2.1`
+5eb2ff0 'Task 1.2'
+be6c23a 'Task 1.1'
+e8b0bbf 'Task 1.1'
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
