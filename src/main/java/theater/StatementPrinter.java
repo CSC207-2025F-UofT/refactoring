@@ -30,45 +30,37 @@ public class StatementPrinter {
      * @return the formatted statement
      */
     public String statement() {
-        int totalAmount = 0;
-        int volumeCredits = 0;
-
         final StringBuilder result = new StringBuilder(
                 "Statement for " + invoice.getCustomer() + System.lineSeparator());
 
+        // 🔹 Loop 1: build the lines for each performance
         for (Performance performance : invoice.getPerformances()) {
-
-            final int thisAmount = getAmount(performance);
-
-            // use helper for volume credits (Task 2.2)
-            volumeCredits += getVolumeCredits(performance);
-
-            // use usd(...) for money formatting (Task 2.3)
             result.append(String.format("  %s: %s (%s seats)%n",
                     getPlay(performance).getName(),
-                    usd(thisAmount),
+                    usd(getAmount(performance)),
                     performance.getAudience()));
-
-            totalAmount += thisAmount;
         }
 
-        result.append(String.format("Amount owed is %s%n",
-                usd(totalAmount)));
+        //  Totals are now computed by helper methods
+        final int totalAmount = getTotalAmount();
+        final int volumeCredits = getTotalVolumeCredits();
+
+        result.append(String.format("Amount owed is %s%n", usd(totalAmount)));
         result.append(String.format("You earned %s credits%n", volumeCredits));
 
         return result.toString();
     }
 
-    // Helper to look up the play for a performance (Task 2.1).
+    // ---------- Helpers from Task 2.1, 2.2, 2.3 & 2.4 ----------
+
+    // Look up the play for a given performance
     private Play getPlay(Performance performance) {
         return plays.get(performance.getPlayID());
     }
 
-    // Helper to compute the amount for a performance (Task 2.1 final form).
+    // Compute the amount for a single performance
     private int getAmount(Performance performance) {
-
         final Play play = getPlay(performance);
-
         int result = 0;
 
         switch (play.getType()) {
@@ -101,7 +93,7 @@ public class StatementPrinter {
         return result;
     }
 
-    // Helper to compute the volume credits for ONE performance (Task 2.2).
+    // Compute the volume credits for ONE performance
     private int getVolumeCredits(Performance performance) {
         int result = 0;
 
@@ -116,10 +108,27 @@ public class StatementPrinter {
         return result;
     }
 
-    // ★ New helper from Task 2.3: format an amount (in cents) as US dollars.
+    // 🔹 New in Task 2.4: total over ALL performances
+    private int getTotalVolumeCredits() {
+        int result = 0;
+        for (Performance performance : invoice.getPerformances()) {
+            result += getVolumeCredits(performance);
+        }
+        return result;
+    }
+
+    // 🔹 New in Task 2.4: total amount over ALL performances
+    private int getTotalAmount() {
+        int result = 0;
+        for (Performance performance : invoice.getPerformances()) {
+            result += getAmount(performance);
+        }
+        return result;
+    }
+
+    // Format an amount (in cents) as US currency
     private String usd(int amount) {
         return NumberFormat.getCurrencyInstance(Locale.US)
                 .format(amount / (double) Constants.PERCENT_FACTOR);
     }
 }
-
