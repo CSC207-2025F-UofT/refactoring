@@ -35,31 +35,31 @@ public class StatementPrinter {
 
         final StringBuilder result = new StringBuilder(
                 "Statement for " + invoice.getCustomer() + System.lineSeparator());
-        final NumberFormat frmt = NumberFormat.getCurrencyInstance(Locale.US);
 
         for (Performance performance : invoice.getPerformances()) {
 
             final int thisAmount = getAmount(performance);
 
-            // ★ Task 2.2: use helper to compute credits for this performance
+            // use helper for volume credits (Task 2.2)
             volumeCredits += getVolumeCredits(performance);
 
+            // use usd(...) for money formatting (Task 2.3)
             result.append(String.format("  %s: %s (%s seats)%n",
                     getPlay(performance).getName(),
-                    frmt.format(thisAmount / (double) Constants.PERCENT_FACTOR),
+                    usd(thisAmount),
                     performance.getAudience()));
 
             totalAmount += thisAmount;
         }
 
         result.append(String.format("Amount owed is %s%n",
-                frmt.format(totalAmount / (double) Constants.PERCENT_FACTOR)));
+                usd(totalAmount)));
         result.append(String.format("You earned %s credits%n", volumeCredits));
 
         return result.toString();
     }
 
-    // Helper to look up the play for a performance (from Task 2.1).
+    // Helper to look up the play for a performance (Task 2.1).
     private Play getPlay(Performance performance) {
         return plays.get(performance.getPlayID());
     }
@@ -101,20 +101,24 @@ public class StatementPrinter {
         return result;
     }
 
-    // ★ New helper from Task 2.2: compute volume credits for ONE performance.
+    // Helper to compute the volume credits for ONE performance (Task 2.2).
     private int getVolumeCredits(Performance performance) {
         int result = 0;
 
-        // base credits
         result += Math.max(
                 performance.getAudience() - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
 
-        // extra credits for comedies
         if ("comedy".equals(getPlay(performance).getType())) {
             result += performance.getAudience()
                     / Constants.COMEDY_EXTRA_VOLUME_FACTOR;
         }
 
         return result;
+    }
+
+    // ★ New helper from Task 2.3: format an amount (in cents) as US dollars.
+    private String usd(int amount) {
+        return NumberFormat.getCurrencyInstance(Locale.US)
+                .format(amount / (double) Constants.PERCENT_FACTOR);
     }
 }
