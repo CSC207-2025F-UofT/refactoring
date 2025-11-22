@@ -62,4 +62,23 @@ aa3e2af finish task 1.1 1.2 2.1
 ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
 b545fe2 clarifying extracted method names in README.md
 a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
 
+57f3c40 (HEAD -> test, origin/test) finish task 2.4
+25ea068 finish task 2.3
+392f98f finish task 2.3
+5d8410f finish task 1.2
+a197717 finish task 1.2
+594f23d finish task 2.2
+2450799 finish task 2.2
+05c4223 finish task 2.2
+6bd0e97 finish task 2.1
+aa3e2af finish task 1.1 1.2 2.1
+6857948 ver 1 m4
+2a862c5 ver 1 m4
+2b4f164 (origin/main, origin/HEAD, main) fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
