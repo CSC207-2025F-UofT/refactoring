@@ -1,3 +1,10 @@
+b9c9ef2 Task 2.4
+eff3b05 Task 2.3
+dbbabf9 Task 2.2
+db412a7 Task 2.1
+bff3b29 Task 1.2
+7c21035 Task 1.1
+c17a803 Update log.txt
 13041c0 pull request
 f676fde pull request
 6568247 Task 2.4
