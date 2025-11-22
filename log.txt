@@ -1,4 +1,6 @@
-be6c23a (HEAD -> main) 'Task 1.1'
+759a561 (HEAD -> main) `Task 2.1`
+5eb2ff0 'Task 1.2'
+be6c23a 'Task 1.1'
 e8b0bbf 'Task 1.1'
 2b4f164 (origin/main, origin/HEAD) fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
 ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
