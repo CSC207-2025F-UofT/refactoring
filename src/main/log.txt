@@ -1,3 +1,4 @@
+ed1cbeb Task 1.2: update log
 5ac342e Task 1.1
 db81bf1 check
 2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
