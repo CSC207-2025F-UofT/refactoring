@@ -39,16 +39,10 @@ public class StatementPrinter {
 
         for (Performance performance : invoice.getPerformances()) {
 
-            // ★ Step 6(b) – play variable removed
             final int thisAmount = getAmount(performance);
 
-            // add volume credits
-            volumeCredits += Math.max(
-                    performance.getAudience() - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
-            if ("comedy".equals(getPlay(performance).getType())) {
-                volumeCredits += performance.getAudience()
-                        / Constants.COMEDY_EXTRA_VOLUME_FACTOR;
-            }
+            // ★ Task 2.2: use helper to compute credits for this performance
+            volumeCredits += getVolumeCredits(performance);
 
             result.append(String.format("  %s: %s (%s seats)%n",
                     getPlay(performance).getName(),
@@ -65,15 +59,14 @@ public class StatementPrinter {
         return result.toString();
     }
 
-    // ★ Step 6(a): Extracted helper method
+    // Helper to look up the play for a performance (from Task 2.1).
     private Play getPlay(Performance performance) {
         return plays.get(performance.getPlayID());
     }
 
-    // ★ Final version of getAmount() after Task 2.1
+    // Helper to compute the amount for a performance (Task 2.1 final form).
     private int getAmount(Performance performance) {
 
-        // Step 6(c): reintroduce play here (not as parameter)
         final Play play = getPlay(performance);
 
         int result = 0;
@@ -103,6 +96,23 @@ public class StatementPrinter {
             default:
                 throw new RuntimeException(
                         String.format("unknown type: %s", play.getType()));
+        }
+
+        return result;
+    }
+
+    // ★ New helper from Task 2.2: compute volume credits for ONE performance.
+    private int getVolumeCredits(Performance performance) {
+        int result = 0;
+
+        // base credits
+        result += Math.max(
+                performance.getAudience() - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
+
+        // extra credits for comedies
+        if ("comedy".equals(getPlay(performance).getType())) {
+            result += performance.getAudience()
+                    / Constants.COMEDY_EXTRA_VOLUME_FACTOR;
         }
 
         return result;
