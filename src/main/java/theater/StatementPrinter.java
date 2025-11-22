@@ -97,6 +97,7 @@ public class StatementPrinter {
         return result;
     }
 
+    // total volume credits from all performence
     private int getTotalVolumeCredits() {
         int re = 0;
         for (final Performance performance : invoice.getPerformances()) {
@@ -105,6 +106,7 @@ public class StatementPrinter {
         return re;
     }
 
+    // get total amount of money from performence (cents)
     private int getTotalAmount() {
         int re = 0;
         for (final Performance performance : invoice.getPerformances()) {
@@ -113,6 +115,7 @@ public class StatementPrinter {
         return re;
     }
 
+    // change cents to usd
     private String usd(int amountInCents) {
         final NumberFormat formatter =
                 NumberFormat.getCurrencyInstance(Locale.US);
