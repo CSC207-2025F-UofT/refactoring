@@ -1,3 +1,15 @@
+8781c79 Task 2.4
+8e45360 Task 2.3
+abaac1f Task 2.2
+dc7fd0a Task 2.1
+135d84d Task 1.2
+d5d401c Task 1.1
+6b40bc0 Task 2.4
+d98ea39 Task 2.3
+5be6d3e Task 2.2
+e87f577 Task 2.1
+6e8071e Task 1.2
+28ae179 Task 1.1
 9329e71  Task 2.4
 4213c22  Task 2.3
 bd6b3a4  Task 2.2
@@ -35,4 +47,3 @@ b545fe2 clarifying extracted method names in README.md
 a0124c9 fixing starter file
 c8d9d38 adding starter files
 cbe4517 first commit
-
