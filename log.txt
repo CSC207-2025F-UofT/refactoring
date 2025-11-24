@@ -1,0 +1,63 @@
+1e30d96 (HEAD -> main, origin/main, origin/HEAD) Task 1.1 Checkstyle Compelted
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
+b77ff1c (HEAD -> main) Task 2.1 step 4 completed
+d6b81a2 (origin/main, origin/HEAD) Task 1.2 git log updated
+1e30d96 Task 1.1 Checkstyle Compelted
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
+2de4ed4 (HEAD -> main) Task 2.1 completed
+b77ff1c Task 2.1 step 4 completed
+d6b81a2 (origin/main, origin/HEAD) Task 1.2 git log updated
+1e30d96 Task 1.1 Checkstyle Compelted
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
+9aca233 (HEAD -> main) Task 2.2 completed
+2de4ed4 Task 2.1 completed
+b77ff1c Task 2.1 step 4 completed
+d6b81a2 (origin/main, origin/HEAD) Task 1.2 git log updated
+1e30d96 Task 1.1 Checkstyle Compelted
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
+475eb69 (HEAD -> main) Task 2.3 completed
+9aca233 Task 2.2 completed
+2de4ed4 Task 2.1 completed
+b77ff1c Task 2.1 step 4 completed
+d6b81a2 (origin/main, origin/HEAD) Task 1.2 git log updated
+1e30d96 Task 1.1 Checkstyle Compelted
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
+:
+git log --oneline
+a72e20c (HEAD -> main, origin/main, origin/HEAD) Task 2.4 completed
+475eb69 Task 2.3 completed
+9aca233 Task 2.2 completed
+2de4ed4 Task 2.1 completed
+b77ff1c Task 2.1 step 4 completed
+d6b81a2 Task 1.2 git log updated
+1e30d96 Task 1.1 Checkstyle Compelted
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
