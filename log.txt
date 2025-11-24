@@ -1,0 +1,72 @@
+345bb11 (HEAD -> main, origin/main, origin/HEAD) Task 1.1 with javadoc comment updated
+4c88f00 Task 1.1
+37c6db2 Fixed
+41651da EverythingFixed
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
+
+40cf12e (HEAD -> main) Task 2.1
+0f54f20 (origin/main, origin/HEAD) log.txt updated in Task 1.2
+345bb11 Task 1.1 with javadoc comment updated
+4c88f00 Task 1.1
+37c6db2 Fixed
+41651da EverythingFixed
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
+
+4e4ff9d (HEAD -> main) Task 2.2 completed
+d2670db (origin/main, origin/HEAD) Task 2.1 logged
+40cf12e Task 2.1
+0f54f20 log.txt updated in Task 1.2
+345bb11 Task 1.1 with javadoc comment updated
+4c88f00 Task 1.1
+37c6db2 Fixed
+41651da EverythingFixed
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
+
+46b691a (HEAD -> main, origin/main, origin/HEAD) Task 2.3 completed
+70a0299 Task 2.2 logged
+4e4ff9d Task 2.2 completed
+d2670db Task 2.1 logged
+40cf12e Task 2.1
+0f54f20 log.txt updated in Task 1.2
+345bb11 Task 1.1 with javadoc comment updated
+4c88f00 Task 1.1
+37c6db2 Fixed
+41651da EverythingFixed
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+
+f655100 (HEAD -> main) Task 2.4 Completed
+2d13a9c (origin/main, origin/HEAD) Logged Task 2.3
+46b691a Task 2.3 completed
+70a0299 Task 2.2 logged
+4e4ff9d Task 2.2 completed
+d2670db Task 2.1 logged
+40cf12e Task 2.1
+0f54f20 log.txt updated in Task 1.2
+345bb11 Task 1.1 with javadoc comment updated
+4c88f00 Task 1.1
+37c6db2 Fixed
+41651da EverythingFixed
+2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
+ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
+b545fe2 clarifying extracted method names in README.md
+a0124c9 fixing starter file
+c8d9d38 adding starter files
+cbe4517 first commit
